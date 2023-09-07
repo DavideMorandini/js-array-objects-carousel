@@ -7,25 +7,15 @@
 
 #main-container {
     display: flex;
+    flex-direction: row;
     flex-flow: row;
     height: 800px;
     margin: 100px 50px;
-
 }
 
 #main-container #img-container {
     width: 85%;
     position: relative;
-}
-
-.description {
-    font-size: 20px;
-    position: absolute;
-    right: 0;
-    bottom: 50px;
-    color: white;
-    text-align: right;
-    padding: 20px;
 }
 
 .imgBig {
@@ -39,41 +29,40 @@
     width: 100%;
     height: calc(100% / 5);
     object-fit: cover;    
-    filter: brightness(50%);
 }
 
 #main-container #player-container {
     width: 15%;
     height: 100%;
-    background-color: #e3e8eb;
     position: relative;
     display: flex;
+    flex-direction: row;
     flex-flow: column;
 }
 
 #main-container #up-arrow {
+    color: red;
     font-size: 40px;
     position: absolute;
-    top: 8%;
+    top: 10%;
     right: 25%;
     transform: translate(-50%, -50%);
-    border-radius: 50%;
+    border-radius: 100%;
     background-color:rgba(0, 0, 0, 0.5);
-    padding: 8px;
-    color: white;
+    padding: 10px;
     z-index: 2;
 }
 
 #main-container #down-arrow {
+    color: red;
     font-size: 40px;
     position: absolute;
     right: 25%;
     bottom: 0;
     transform: translate(-50%, -50%);
-    border-radius: 50%;
+    border-radius: 100%;
     background-color:rgba(0, 0, 0, 0.5);
-    padding: 8px;
-    color: white;
+    padding: 10px;
     z-index: 2;
 }
 
